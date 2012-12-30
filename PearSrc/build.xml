@@ -3,7 +3,7 @@
 <property name="M2_REPO" value="/Users/tf0054/.m2/repository"/>
 
 <path id="pearTask.classpath">
-	<fileset dir="${M2_REPO}/../../ica/apache-uima/addons/PearPackagingAntTask/lib" includes="uima-pear-ant-task.jar"/>
+	<fileset dir="../lib" includes="uima-pear-ant-task.jar"/>
 	<fileset dir="${M2_REPO}/org/apache/uima/uimaj-core/2.3.1" includes="uimaj-core-2.3.1.jar"/>
 </path>
 
