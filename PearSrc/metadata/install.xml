@@ -19,7 +19,7 @@
 			<ACTION>set_env_variable</ACTION>
 			<PARAMETERS>
 				<COMMENTS>component classpath setting</COMMENTS>
-				<VAR_VALUE>$main_root/lib/uimaFIT-examples-2.3_fat.jar;$main_root/lib/SomeFunkyJar.jar</VAR_VALUE>
+				<VAR_VALUE>$main_root/lib/uimaFIT-examples-2.3_fat.jar;$main_root/bin</VAR_VALUE>
 				<VAR_NAME>classpath</VAR_NAME>
 			</PARAMETERS>
 		</PROCESS>

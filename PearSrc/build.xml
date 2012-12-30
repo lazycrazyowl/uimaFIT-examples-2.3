@@ -1,4 +1,4 @@
-<project name="ytex-tools" default="create-jar">
+<project name="ytex-tools" default="create-pear">
 
 <property name="M2_REPO" value="/Users/tf0054/.m2/repository"/>
 
@@ -12,17 +12,17 @@
    classname="org.apache.uima.pear.tools.PearPackagingAntTask"
    classpathref="pearTask.classpath"/>
 
-<target name="create-jar">
-    <jar destfile="lib/SomeFunkyJar.jar"
-         basedir="bin"
-         includes="**/*.class"/>
-</target>
-
 <target name="create-pear">
+	<!--
+	http://uima.apache.org/downloads/releaseDocs/2.3.0-incubating/docs/html/references/references.html#ugr.ref.pear.creating_pear_structure
+	-->
+	<delete includeEmptyDirs="true">
+	   <fileset dir="../SimpleServer/webapp/resources/CASDumpWriter"/>
+	</delete>
 	<packagePear 
 	   componentID="CASDumpWriter"
 	   mainComponentDesc="desc/CASDumpWriter.xml" 
-	   classpath="$main_root/lib/uimaFIT-examples-2.3_fat.jar;$main_root/lib/SomeFunkyJar.jar" 
+	   classpath="$main_root/lib/uimaFIT-examples-2.3_fat.jar;$main_root/bin" 
 	   datapath="$main_root/resources"
 	   mainComponentDir="/Users/tf0054/Documents/workspace2/uimaFIT-examples-2.3/PearSrc"
 	   targetDir="../SimpleServer/webapp/resources">
