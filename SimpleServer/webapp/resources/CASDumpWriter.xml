@@ -1,0 +1,12 @@
+<uimaSimpleServerSpec
+        xmlns="http://uima.apache.org/simpleserver/config/xml"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="file:///SimpleServerConfig.xsd">
+        <shortDescription>Recognize tokens and sentences</shortDescription>
+    <type name="org.apache.uima.TokenAnnotation" outputTag="token"
+        outputCoveredText="true">
+    </type>
+    <type name="org.apache.uima.SentenceAnnotation" outputTag="sentence"
+        outputCoveredText="true">
+    </type>
+</uimaSimpleServerSpec>

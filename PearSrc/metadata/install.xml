@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<COMPONENT_INSTALLATION_DESCRIPTOR>
+	<OS>
+		<NAME>Mac OS X</NAME>
+	</OS>
+	<TOOLKITS>
+		<JDK_VERSION>1.6.0_37</JDK_VERSION>
+	</TOOLKITS>
+	<UIMA_FRAMEWORK>
+	</UIMA_FRAMEWORK>
+	<SUBMITTED_COMPONENT>
+		<ID>CASDumpWriter</ID>
+		<NAME></NAME>
+		<DESC>$main_root/desc/CASDumpWriter.xml</DESC>
+		<DEPLOYMENT>standard</DEPLOYMENT>
+	</SUBMITTED_COMPONENT>
+	<INSTALLATION>
+		<PROCESS>
+			<ACTION>set_env_variable</ACTION>
+			<PARAMETERS>
+				<COMMENTS>component classpath setting</COMMENTS>
+				<VAR_VALUE>$main_root/lib/uimaFIT-examples-2.3_fat.jar;$main_root/lib/SomeFunkyJar.jar</VAR_VALUE>
+				<VAR_NAME>classpath</VAR_NAME>
+			</PARAMETERS>
+		</PROCESS>
+		<PROCESS>
+			<ACTION>set_env_variable</ACTION>
+			<PARAMETERS>
+				<COMMENTS>component uima.datapath setting</COMMENTS>
+				<VAR_VALUE>$main_root/resources</VAR_VALUE>
+				<VAR_NAME>uima.datapath</VAR_NAME>
+			</PARAMETERS>
+		</PROCESS>
+		<PROCESS>
+			<ACTION>set_env_variable</ACTION>
+			<PARAMETERS>
+				<COMMENTS>component ENV_VAR_NO2 setting</COMMENTS>
+				<VAR_VALUE>value2</VAR_VALUE>
+				<VAR_NAME>ENV_VAR_NO2</VAR_NAME>
+			</PARAMETERS>
+		</PROCESS>
+		<PROCESS>
+			<ACTION>set_env_variable</ACTION>
+			<PARAMETERS>
+				<COMMENTS>component ENV_VAR_NO1 setting</COMMENTS>
+				<VAR_VALUE>value1</VAR_VALUE>
+				<VAR_NAME>ENV_VAR_NO1</VAR_NAME>
+			</PARAMETERS>
+		</PROCESS>
+	</INSTALLATION>
+</COMPONENT_INSTALLATION_DESCRIPTOR>

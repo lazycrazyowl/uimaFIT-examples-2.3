@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Thu Dec 27 03:38:28 JST 2012
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=uimaFIT-examples-2.3_fat.jar
+manifest.mergeall=true
+manifest.mainclass=
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=<po|uimaFIT-examples-2.3>;<cl|/Users/tf0054/.m2/repository>;<cl|/Users/tf0054/Documents/workspace2/uimaFIT-examples>;<jar|uimaj-adapter-vinci-2.4.0.jar>;<jar|uimaj-core-2.4.0.jar>;<jar|uimaj-cpe-2.4.0.jar>;<jar|uimaj-document-annotation-2.4.0.jar>;<jar|uimaj-tools-2.4.0.jar>;<jar|uima-an-wst.jar>;<jar|commons-compress-1.4.1.jar>
+includes=

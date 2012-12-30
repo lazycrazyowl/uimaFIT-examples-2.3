@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry including="**/*.java" kind="src" path="src/main/java"/>
+	<classpathentry excluding="**/*.java" kind="src" path="src/main/resources"/>
+	<classpathentry kind="var" path="M2_REPO/org/eclipse/emf/common/2.1.0/common-2.1.0.jar" sourcepath="M2_REPO/org/eclipse/emf/common/2.1.0/common-2.1.0-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/eclipse/emf/ecore/2.1.0/ecore-2.1.0.jar" sourcepath="M2_REPO/org/eclipse/emf/ecore/2.1.0/ecore-2.1.0-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/eclipse/emf/ecore-xmi/2.1.0/ecore-xmi-2.1.0.jar" sourcepath="M2_REPO/org/eclipse/emf/ecore-xmi/2.1.0/ecore-xmi-2.1.0-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/uima/jVinci/2.4.0/jVinci-2.4.0.jar" sourcepath="M2_REPO/org/apache/uima/jVinci/2.4.0/jVinci-2.4.0-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/uima/uimaj-adapter-vinci/2.4.0/uimaj-adapter-vinci-2.4.0.jar" sourcepath="M2_REPO/org/apache/uima/uimaj-adapter-vinci/2.4.0/uimaj-adapter-vinci-2.4.0-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/uima/uimaj-core/2.4.0/uimaj-core-2.4.0.jar" sourcepath="M2_REPO/org/apache/uima/uimaj-core/2.4.0/uimaj-core-2.4.0-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/uima/uimaj-cpe/2.4.0/uimaj-cpe-2.4.0.jar" sourcepath="M2_REPO/org/apache/uima/uimaj-cpe/2.4.0/uimaj-cpe-2.4.0-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/uima/uimaj-document-annotation/2.4.0/uimaj-document-annotation-2.4.0.jar" sourcepath="M2_REPO/org/apache/uima/uimaj-document-annotation/2.4.0/uimaj-document-annotation-2.4.0-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/uima/uimaj-tools/2.4.0/uimaj-tools-2.4.0.jar" sourcepath="M2_REPO/org/apache/uima/uimaj-tools/2.4.0/uimaj-tools-2.4.0-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/springframework/spring-core/3.1.0.RELEASE/spring-core-3.1.0.RELEASE.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/springframework/spring-beans/3.1.0.RELEASE/spring-beans-3.1.0.RELEASE.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/springframework/spring-aop/3.1.0.RELEASE/spring-aop-3.1.0.RELEASE.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/springframework/spring-asm/3.1.0.RELEASE/spring-asm-3.1.0.RELEASE.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/springframework/spring-context/3.1.0.RELEASE/spring-context-3.1.0.RELEASE.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/google/guava/guava/13.0/guava-13.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/commons-lang/commons-lang/2.5/commons-lang-2.5.jar"/>
+	<classpathentry kind="var" path="M2_REPO/commons-io/commons-io/2.1/commons-io-2.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/uimafit/uimafit/1.4.0/uimafit-1.4.0.jar" sourcepath="/M2_REPO/org/uimafit/uimafit/1.4.0/uimafit-1.4.0-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/args4j/args4j/2.0.16/args4j-2.0.16.jar"/>
+	<classpathentry kind="var" path="M2_REPO/log4j/log4j/1.2.16/log4j-1.2.16.jar"/>
+	<classpathentry kind="var" path="M2_REPO"/>
+	<classpathentry kind="var" path="UIMA_HOME"/>
+	<classpathentry kind="lib" path="/Users/tf0054/Documents/workspace2/WhitespaceTokenizer/target/uima-an-wst.jar" sourcepath="/WhitespaceTokenizer"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
