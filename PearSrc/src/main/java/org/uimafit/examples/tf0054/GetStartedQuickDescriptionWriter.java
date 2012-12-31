@@ -30,7 +30,7 @@ import org.xml.sax.SAXException;
  * @author Philip Ogren
  * 
  */
-public class GetStartedQuickDescriptor {
+public class GetStartedQuickDescriptionWriter {
 
 	public static void main(String[] args) throws ResourceInitializationException,
 			FileNotFoundException, SAXException, IOException {
@@ -38,11 +38,12 @@ public class GetStartedQuickDescriptor {
 		
 		// Instantiate the analysis engine using the value "uimaFIT" for the parameter
 		// PARAM_STRING ("stringParam").
+		// I don't know how can i assign array default values (now manually added this on desc/xxx.xml)
 		AnalysisEngineDescription analysisEngineDescription = AnalysisEngineFactory
 				.createPrimitiveDescription(GetStartedQuickAE.class,
 						GetStartedQuickAE.PARAM_STRING, "uimaFIT");
 		
 		// Write the descriptor to an XML file
-		analysisEngineDescription.toXML(new FileOutputStream("GetStartedQuickAE.xml"));
+		analysisEngineDescription.toXML(new FileOutputStream("desc/GetStartedQuickAE.xml"));
 	}
 }

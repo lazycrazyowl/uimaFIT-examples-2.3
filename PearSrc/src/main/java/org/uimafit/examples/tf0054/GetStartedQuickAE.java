@@ -16,13 +16,26 @@
  */
 package org.uimafit.examples.tf0054;
 
+import java.util.Random;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import org.apache.uima.analysis_engine.AnalysisEngineProcessException;
 import org.apache.uima.jcas.JCas;
+import org.apache.uima.util.Level;
+import org.apache.uima.util.Logger;
 import org.uimafit.component.JCasAnnotator_ImplBase;
 import org.uimafit.descriptor.ConfigurationParameter;
+import org.uimafit.examples.tf0054.type.FirstCasType;
 
 /**
- * @author Philip Ogren
+ * @author Takeshi NAKANO
+ * 
+ * 1. Edit logic of annotator.
+ * 2. Run Description writer (for making desc/abcAE.xml)
+ * 3. if you change or create new cas type, edit src/main/resources/META-INF/org.uimafit/types.txt
+ * 4. if you change or create new cas type, use Component Descriptor Editor to xyzType.xml and run jcasgen
+ * 
  */
 public class GetStartedQuickAE extends JCasAnnotator_ImplBase {
 
@@ -30,9 +43,36 @@ public class GetStartedQuickAE extends JCasAnnotator_ImplBase {
 	@ConfigurationParameter(name = PARAM_STRING)
 	private String stringParam;
 
+//	@ConfigurationParameter(name = "Patterns")
+//	private Pattern[] mPatterns;
+
+	@ConfigurationParameter(name = "Locations")
+	private String[] mLocations;
+
 	@Override
 	public void process(JCas jCas) throws AnalysisEngineProcessException {
-		System.out.println("Hello world!  Say 'hi' to " + stringParam +" : "+ jCas.getDocumentText());
-		//jCas.setSofaDataString(jCas.getSofaDataString()+"*", jCas.getSofaMimeType());
+		System.out.println("Start: " + stringParam +" : "+ jCas.getDocumentText());
+
+		String docText = jCas.getDocumentText();
+		String regexp = "world";
+		Pattern mPattern = Pattern.compile(regexp);
+		// loop over patterns
+		// found one - create annotation		
+		FirstCasType annotation = new FirstCasType(jCas, 0, docText.length());
+		Matcher matcher = mPattern.matcher(docText);
+		while (matcher.find()) {
+			annotation.setArgString(mLocations[0]+"("+matcher.start()+","+matcher.end()+")");
+			//
+			FirstCasType objFutureSt = new FirstCasType(jCas, matcher.start(), matcher.end());
+			objFutureSt.addToIndexes();
+			//
+			Logger logger = getContext().getLogger();
+			logger.log(Level.FINEST, "Found: " + annotation);
+		}
+		annotation.setArgInt((new Random()).nextInt(100));
+		//
+		annotation.addToIndexes();
+		
+		System.out.println("End: " + stringParam +" : "+ jCas.getSofaDataURI());
 	}
 }

@@ -16,6 +16,13 @@
                 <multiValued>false</multiValued>
                 <mandatory>false</mandatory>
             </configurationParameter>
+            <configurationParameter>
+                <name>Locations</name>
+                <description/>
+                <type>String</type>
+                <multiValued>true</multiValued>
+                <mandatory>false</mandatory>
+            </configurationParameter>
         </configurationParameters>
         <configurationParameterSettings>
             <nameValuePair>
@@ -24,21 +31,30 @@
                     <string>uimaFIT</string>
                 </value>
             </nameValuePair>
+            <nameValuePair>
+                <name>Locations</name>
+		<value>
+		  <array>
+	  	    <string>Downtown</string>
+		    <string>Uptown</string>
+		  </array>
+		</value>
+            </nameValuePair>
         </configurationParameterSettings>
         <typeSystemDescription>
             <types>
                 <typeDescription>
-                    <name>org.uimafit.examples.tutorial.type.RoomNumber</name>
+                    <name>org.uimafit.examples.tf0054.type.FirstCasType</name>
                     <description/>
                     <supertypeName>uima.tcas.Annotation</supertypeName>
                     <features>
                         <featureDescription>
-                            <name>building</name>
+                            <name>argString</name>
                             <description>build. name</description>
                             <rangeTypeName>uima.cas.String</rangeTypeName>
                         </featureDescription>
                         <featureDescription>
-                            <name>ids</name>
+                            <name>argInt</name>
                             <description>test add</description>
                             <rangeTypeName>uima.cas.Integer</rangeTypeName>
                         </featureDescription>
